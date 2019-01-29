@@ -9,3 +9,13 @@ host: "localhost",
 user: "root",
 password: "root",
 database: "leaderboard"
+
+##ASSUMPTIONS
+1. The Competitor, Referee and Subscriber are the actors of the system.
+1. A Competitor has to register to participate. Once they register, they have to play H2H with every other competitor.
+2. The Referee adds the result for an H2H contest. The score submission consists of adding the ID of the competitors and the winner by choosing one of these (competitor #1, competitor #2, draw). Winner is awarded 2 points, a draw gives 1 to each competitor and a loss means no points. This kind of a scoring is created for simplicity and proof of concept.
+3. A Subscriber has to register to view the leaderboard. The leaderboard refreshes every 30 seconds and thus provides real time data to the subscriber.
+
+##KEY ASPECTS
+1. The Node server consolidates data from tables, competitor and h2h, thus writing it back to leaderboard table. This job happens every 15 seconds
+2. The React front end for the subscriber polls for updated leaderboard information every 30 seconds.
