@@ -1,0 +1,85 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+form {
+    display: inline-flex;
+    text-align: center;
+    text-align: -webkit-center;
+
+    > div {
+        display: grid;
+        width: 100%;
+    }
+
+    input {
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 1% 1%;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+

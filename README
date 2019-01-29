@@ -1,0 +1,11 @@
+# STEPS TO RUN:
+
+1. Run *npm install_all* from the ROOT folder to install all dependencies for client and backend
+2. Run *npm start* to start client and server together
+
+##TO CREATE A LOCAL DB (Use credentials or change the DB configuration )
+
+host: "localhost",
+user: "root",
+password: "root",
+database: "leaderboard"

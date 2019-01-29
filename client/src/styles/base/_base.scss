@@ -1,0 +1,104 @@
+@import "./common";
+
+#app {
+    height: 100%;
+}
+
+#app-child {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+}
+
+.row1 {
+    font-size: 3rem;
+    text-align: center;  
+}
+
+.row2 {
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+
+    button {
+        width: 50%;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row2 {
+        width: 100%;
+    }
+}
+
+#main-menu > div {
+    margin: 10% auto;
+}
+
+#referee {
+    h3 {
+        margin: 5% 10%;
+    }
+}
+
+#submitScores-form {
+    #result-radio {
+        margin: 0 10px;
+        text-align: left;
+
+        #result-radio_group {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            justify-content: right;
+            align-items: center;
+        }
+    }
+}
+
+#lbs {
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+#lb_basic {
+}
+
+.active-header {
+    font-weight: bold;
+}
+
+.actor {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Login - Register switch */
+#form-switch {
+    display:none
+}
+
+#register-form {
+    display:none
+}
+
+#form-switch:checked~div>#register-form {
+    display: inline-flex;
+}
+
+#form-switch:checked~div>#login-form {
+    display:none
+}
+/*--------------- Login - Register switch ---------------*/
+

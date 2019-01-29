@@ -1,0 +1,11 @@
+## [1.0.0] - 29/9/2018
+### Added
+- Basic React starter app with basic configurations
+- Configuration include,
+    - babel
+    - webpack
+    - webpack-dev-server
+    - css
+    - sass/scss
+    - live-server
+    - presets: react, stage-2, env
